@@ -81,6 +81,25 @@ em { font-style: italic; }
 .photo.full-photo img { max-height: 670px; object-fit: contain; object-position: center; }
 .photo.landscape img { aspect-ratio: 3 / 2; object-fit: cover; }
 .photo.tall img { max-height: 690px; object-fit: contain; }
+/* Research photo layouts: generous images, without cropping portrait fieldwork photographs. */
+.research-feature-photo img { width: 100%; height: auto; }
+.research-gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; margin-top: 1.85rem; align-items: start; }
+.modern-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.research-gallery .photo img { aspect-ratio: 4 / 3; object-fit: cover; }
+.chemistry-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: auto auto; gap: 1rem; align-items: start; }
+.chemistry-beakers { grid-column: 1; grid-row: 1; }
+.chemistry-coast { grid-column: 1; grid-row: 2; }
+.chemistry-filter { grid-column: 2; grid-row: 1 / span 2; }
+.chemistry-gallery .photo img { width: 100%; height: auto; }
+.outreach-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.4rem; margin-top: 1.8rem; }
+.outreach-gallery .photo img { aspect-ratio: 3 / 2; object-fit: cover; }
+.fossil-grid { grid-template-columns: minmax(0, 1.3fr) minmax(280px, .7fr); align-items: center; }
+.fossil-portrait { max-width: 360px; margin-inline: auto; }
+.fossil-portrait img { width: 100%; height: auto; object-fit: contain; }
+.fossil-outcrop { max-width: 800px; margin: 1.6rem auto 0; }
+.prediction-secondary { max-width: 750px; margin: 1.65rem auto 0; }
+.trait-figure img { border: 1px solid #d7e1da; box-shadow: none; }
+.ecometrics-callout { max-width: 800px; margin-top: 2rem; }
 .callout { padding: 1.4rem 1.5rem; background: var(--soft); border-left: 3px solid #74a6a4; margin: 2rem 0; }
 .callout p:last-child { margin-bottom: 0; }
 .callout h4 { font-size: 1.2rem; }
@@ -105,16 +124,25 @@ em { font-style: italic; }
   .header-inner { flex-direction: column; align-items: flex-start; gap: .65rem; }
   .site-nav { margin-left: -.65rem; }
   .hero-layout, .feature-grid, .feature-grid.reverse { grid-template-columns: 1fr; }
+  .fossil-grid { grid-template-columns: 1fr; }
   .hero-portrait { max-width: 400px; }
   .feature-grid.reverse .feature-media { order: initial; }
   .feature-grid .feature-media { max-width: 650px; }
   .focus-grid { grid-template-columns: 1fr; gap: .5rem; }
+  .research-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .fossil-portrait { max-width: 390px; margin-inline: 0; }
 }
 @media (max-width: 600px) {
   .container { width: min(100% - 2rem, 1120px); }
   .site-nav a { padding: .38rem .52rem; font-size: .8rem; }
   .feature { padding: 2.2rem 0; }
   .media-stack.two { gap: .7rem; }
+  .research-gallery { grid-template-columns: 1fr; gap: 1.1rem; }
+  .modern-gallery { grid-template-columns: 1fr; }
+  .research-gallery .photo img { aspect-ratio: auto; object-fit: contain; }
+  .chemistry-gallery { grid-template-columns: 1fr 1fr; }
+  .outreach-gallery { grid-template-columns: 1fr; }
+  .outreach-gallery .photo img { aspect-ratio: auto; object-fit: contain; }
   .cv-panel { padding: 1.3rem; }
   .hero { padding-top: 3rem; }
 }

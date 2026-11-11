@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 630" role="img" aria-labelledby="title desc">
+  <title id="title">Coral trait diversity</title>
+  <desc id="desc">Conceptual silhouettes illustrating five coral colony growth forms, and circles representing variation in corallite width.</desc>
+  <rect width="1000" height="630" rx="18" fill="#f3f7f4"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#243d43">
+    <text x="46" y="57" font-size="31" font-weight="700">A community of many forms</text>
+    <text x="46" y="92" font-size="19" fill="#566c6e">Colony growth form</text>
+  </g>
+  <g fill="#e7efeb" stroke="#d9e5df" stroke-width="2">
+    <rect x="42" y="116" width="170" height="259" rx="10"/>
+    <rect x="228" y="116" width="170" height="259" rx="10"/>
+    <rect x="414" y="116" width="170" height="259" rx="10"/>
+    <rect x="600" y="116" width="170" height="259" rx="10"/>
+    <rect x="786" y="116" width="170" height="259" rx="10"/>
+  </g>
+  <!-- The silhouettes are stylized conceptual growth-form categories, not genus-level identifications. -->
+  <g fill="#528c85" stroke="#376f70" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+    <!-- Encrusting: low profile following substrate. -->
+    <path d="M62 292 Q80 284 97 292 Q124 279 140 292 Q168 281 195 292 L195 311 L62 311 Z"/>
+    <path d="M79 284 Q89 275 100 284 M124 281 Q139 272 153 282 M164 287 Q178 277 188 285" fill="none" stroke="#8cb6a8" stroke-width="5"/>
+    <!-- Massive: a rounded colony. -->
+    <path d="M251 311 C241 273 247 214 281 191 C312 168 363 188 376 230 C392 282 381 305 369 311 Z"/>
+    <g stroke="#8eb9a9" fill="none" stroke-width="3">
+      <path d="M271 278 Q288 267 299 278 M310 249 Q328 235 343 251 M343 289 Q360 278 370 288 M273 233 Q290 217 303 232 M303 296 Q316 287 329 296"/>
+    </g>
+    <!-- Laminar: overlapping horizontal plates. -->
+    <path d="M487 311 L487 231 Q470 232 454 218 Q470 204 498 204 Q525 204 547 217 Q534 235 511 235 L510 311 Z"/>
+    <path d="M472 259 Q497 242 527 252 Q551 257 569 275 Q539 289 514 286 Q487 284 466 272 Z"/>
+    <path d="M451 299 Q481 288 506 298 Q533 287 555 302 Q537 314 502 317 Q464 313 451 299 Z"/>
+    <!-- Digitate: upright finger-like projections. -->
+    <path d="M627 310 L628 231 Q628 218 640 218 Q652 219 653 232 L655 282 L662 201 Q663 187 676 188 Q689 190 689 202 L689 273 L699 223 Q703 209 715 211 Q729 213 725 227 L718 286 L730 250 Q738 238 749 246 Q758 256 748 266 L734 312 Z"/>
+    <!-- Branching: subdivided branching framework. -->
+    <path d="M865 311 L868 263 L847 231 L834 212 L842 205 L865 230 L879 248 L880 214 L861 185 L870 180 L892 204 L902 183 L910 188 L898 217 L895 253 L919 227 L929 232 L902 270 L898 312 Z"/>
+    <path d="M868 263 L844 273 L824 260 L818 266 L843 283 L867 278 Z"/>
+    <path d="M898 252 L924 248 L938 229 L947 237 L931 261 L903 269 Z"/>
+  </g>
+  <g fill="#4d696c" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" text-anchor="middle">
+    <text x="127" y="350">Encrusting</text>
+    <text x="313" y="350">Massive</text>
+    <text x="499" y="350">Laminar</text>
+    <text x="685" y="350">Digitate</text>
+    <text x="871" y="350">Branching</text>
+  </g>
+  <path d="M46 416 H954" stroke="#d1deda" stroke-width="2"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="46" y="456" font-size="24" font-weight="700" fill="#243d43">Variation in skeletal traits</text>
+    <text x="46" y="485" font-size="17" fill="#5d7174">Corallite width is one measurable dimension</text>
+  </g>
+  <g fill="#f4f7f3" stroke="#528c85" stroke-width="5">
+    <circle cx="625" cy="497" r="13"/>
+    <circle cx="730" cy="497" r="29"/>
+    <circle cx="875" cy="497" r="48"/>
+  </g>
+  <g fill="#528c85"><circle cx="625" cy="497" r="3"/><circle cx="730" cy="497" r="5"/><circle cx="875" cy="497" r="8"/></g>
+  <g fill="#597176" font-family="Arial, Helvetica, sans-serif" font-size="16" text-anchor="middle">
+    <text x="625" y="563">Smaller</text>
+    <text x="730" y="563">Intermediate</text>
+    <text x="875" y="563">Larger</text>
+  </g>
+  <text x="46" y="599" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#72817b">Illustrative, not to scale</text>
+</svg>
