@@ -35,13 +35,13 @@
             <a href="https://alligatorheadfoundation.org/">Alligator Head Foundation →</a>
           </div>
         </div>
-        <div class="feature-media">
+        <div class="feature-media modern-media">
           <figure class="photo research-feature-photo"><img src="45B1AB25-5358-4634-947C-523934AC79E3_1_105_c.jpeg" alt="Claire Williams writing during an underwater survey" loading="lazy"><figcaption>Recording observations during an underwater survey.</figcaption></figure>
+          <div class="modern-photo-pair">
+            <figure class="photo"><img src="409412E2-D13E-40BD-A537-2AB57EDC62F4_1_105_c.jpeg" alt="Claire Williams underwater in scuba gear" loading="lazy"><figcaption>Underwater fieldwork.</figcaption></figure>
+            <figure class="photo"><img src="2ADE513A-1751-4ACB-9E35-1C92E6FAF31E_1_105_c.jpeg" alt="Claire Williams helping with a sea turtle nest relocation" loading="lazy"><figcaption>Assisting local partners with a sea turtle nest relocation.</figcaption></figure>
+          </div>
         </div>
-      </div>
-      <div class="research-gallery modern-gallery" aria-label="Photographs from reef monitoring fieldwork">
-        <figure class="photo"><img src="7E0557E3-4655-4815-904D-6F8CC8149D68_1_105_c.jpeg" alt="Claire Williams diving over a coral reef" loading="lazy"><figcaption>Underwater fieldwork in Jamaica.</figcaption></figure>
-        <figure class="photo"><img src="32363BB2-1AD0-41E2-A14B-D64847291DCA_1_105_c.jpeg" alt="Two scuba divers above a coral reef" loading="lazy"><figcaption>Monitoring the condition of living reefs.</figcaption></figure>
       </div>
 
       <div class="feature-grid reverse" style="margin-top:3.2rem">
@@ -53,14 +53,20 @@
         </div>
         <div class="feature-media chemistry-gallery">
           <figure class="photo chemistry-beakers"><img src="A90BF9EB-0E4B-4E82-884D-E325C7DDA58A_1_105_c.jpeg" alt="Water chemistry measurement instrument and glass flasks in a laboratory" loading="lazy"><figcaption>Laboratory analysis of water chemistry samples.</figcaption></figure>
-          <figure class="photo chemistry-coast"><img src="2ADE513A-1751-4ACB-9E35-1C92E6FAF31E_1_105_c.jpeg" alt="Coastline and fishing boats along a sheltered bay in Jamaica" loading="lazy"><figcaption>The coastal environment of northeast Jamaica.</figcaption></figure>
+          <figure class="photo chemistry-motion">
+            <video id="chemistry-video" autoplay muted loop playsinline preload="metadata" poster="chemistry_analyzer_poster.jpg" aria-label="Silent video of an automated analyzer processing water chemistry samples">
+              <source src="chemistry_analyzer_loop.mp4" type="video/mp4">
+              Your browser does not support embedded video.
+            </video>
+            <figcaption class="video-caption"><span>Automated nutrient analysis.</span><button type="button" class="video-toggle" id="chemistry-video-toggle" aria-controls="chemistry-video">Pause video</button></figcaption>
+          </figure>
           <figure class="photo chemistry-filter"><img src="FF537D43-1D67-44E1-89A7-E632EF85257E_1_105_c.jpeg" alt="Claire Williams filtering water samples in a laboratory" loading="lazy"><figcaption>Preparing water samples for analysis.</figcaption></figure>
         </div>
       </div>
     </section>
 
     <section class="feature" id="fossils" aria-labelledby="fossils-title">
-      <div class="feature-grid fossil-grid">
+      <div class="feature-grid">
         <div>
           <div class="meta">02 / Conservation paleobiology</div>
           <h2 id="fossils-title">Fossil reefs as ecological baselines</h2>
@@ -68,11 +74,11 @@
           <p>In northeast Jamaica, Late Pleistocene reefs preserve assemblages dominated by framework-building <em>Acropora</em>, which are now effectively absent from comparable modern reefs. By comparing fossil and living communities, I investigate the magnitude of ecological change and the historical context needed to evaluate recovery.</p>
           <div class="inline-links"><a href="https://doi.org/10.2110/palo.2025.041">Williams et al. (2026), <em>PALAIOS</em> →</a></div>
         </div>
-        <div class="feature-media">
+        <div class="feature-media fossil-photo-pair">
           <figure class="photo fossil-portrait"><img src="726C68C7-FE98-4246-BF71-7442FE3C226F_1_105_c.jpeg" alt="Claire Williams examining exposed fossil coral during fieldwork" loading="lazy"><figcaption>Examining fossil coral during fieldwork.</figcaption></figure>
+          <figure class="photo"><img src="IMG_3578.JPG" alt="Exposed Pleistocene fossil reef limestone in northeast Jamaica" loading="lazy"><figcaption>Exposed Pleistocene reef deposits in Jamaica.</figcaption></figure>
         </div>
       </div>
-      <figure class="photo fossil-outcrop"><img src="IMG_3578.JPG" alt="Exposed Pleistocene fossil reef limestone in northeast Jamaica" loading="lazy"><figcaption>Exposed Pleistocene reef deposits in Jamaica.</figcaption></figure>
     </section>
 
     <section class="feature" id="predictions" aria-labelledby="predictions-title">
@@ -88,7 +94,6 @@
           <figure class="photo research-feature-photo"><img src="9942A0C1-3E33-4243-BD8F-05162523ECB8_1_105_c.jpeg" alt="Coral colonies and sea fans across an underwater reef" loading="lazy"><figcaption>Variation in living coral reef communities provides a starting point for questions about future habitat.</figcaption></figure>
         </div>
       </div>
-      <figure class="photo prediction-secondary"><img src="G0125122_1688058790349.JPG" alt="Scuba divers above an underwater coral reef" loading="lazy"><figcaption>Fieldwork on modern reefs complements analyses of fossil and living coral occurrences.</figcaption></figure>
     </section>
 
     <section class="feature" id="ecometrics" aria-labelledby="ecometrics-title">
@@ -100,16 +105,39 @@
           <p>These trait-environment relationships may help identify communities that are poorly matched to present conditions, investigate environmental change in the fossil record, and anticipate ecological vulnerability. I am developing approaches that combine coral trait data, environmental datasets, and models at global and regional scales.</p>
           <p class="small">Ongoing research</p>
         </div>
-        <figure class="photo trait-figure"><img src="coral_trait_diversity.svg" alt="Schematic illustrating five different coral colony growth forms and the variation in corallite width" loading="lazy"><figcaption>Two dimensions of coral trait diversity: colony growth form and corallite width. Illustrations are conceptual, not to scale.</figcaption></figure>
+        <aside class="callout">
+          <div class="eyebrow">Questions guiding this work</div>
+          <h4>What can coral traits tell us?</h4>
+          <p>Which traits track environmental gradients? Do those relationships transfer across regions and into the fossil record? Can we recognize potential mismatches between coral communities and changing conditions?</p>
+        </aside>
       </div>
-      <aside class="callout ecometrics-callout">
-        <div class="eyebrow">Questions guiding this work</div>
-        <h4>What can coral traits tell us?</h4>
-        <p>Which traits track environmental gradients? Do those relationships transfer across regions and into the fossil record? Can we recognize potential mismatches between coral communities and changing conditions?</p>
-      </aside>
     </section>
   </main>
 
   <footer class="site-footer"><div class="container"><span>© 2026 Claire M. Williams</span><span><a href="mailto:cwilliams681@gatech.edu">Email</a> · <a href="https://github.com/ClaireMWilliams">GitHub</a></span></div></footer>
+  <script>
+    (function () {
+      const video = document.getElementById('chemistry-video');
+      const toggle = document.getElementById('chemistry-video-toggle');
+      if (!video || !toggle) return;
+
+      // Leave the still image visible until a visitor chooses to play when reduced motion is preferred.
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        video.removeAttribute('autoplay');
+        video.pause();
+      }
+
+      function updateButton() {
+        toggle.textContent = video.paused ? 'Play video' : 'Pause video';
+      }
+      toggle.addEventListener('click', function () {
+        if (video.paused) video.play().catch(updateButton);
+        else video.pause();
+      });
+      video.addEventListener('play', updateButton);
+      video.addEventListener('pause', updateButton);
+      updateButton();
+    }());
+  </script>
 </body>
 </html>
